@@ -57,3 +57,4 @@ document.addEventListener("DOMContentLoaded", () => {
   prevArrow.addEventListener("click", previousSlide);
   nextArrow.addEventListener("click", nextSlide);
 });
+
