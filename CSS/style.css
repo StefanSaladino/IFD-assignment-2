@@ -1,8 +1,8 @@
 /*general reset*/
 * {
 
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -20,20 +20,21 @@ header {
     color: rgb(231, 226, 226);
 }
 
-nav menu h2, li{
+nav menu h2,
+li {
 
     display: inline-block;
     margin: 2vh 1.5vw;
 }
 
-#search{
+#search {
 
     padding: 2vh 1.5vw;
     margin: 0 0.5vw;
 }
 
 #search input {
-    
+
     border: 0;
     border-radius: 2px;
     height: 6vh;
@@ -60,52 +61,52 @@ header a:hover {
     color: #ffffff
 }
 
-.slides{
-    
+.slides {
+
     min-width: 100%;
     min-height: 85vh;
     display: flex;
-    background-color: rgba(90, 90, 90, 0.6);
     padding: 15vh 15vw;
     flex-direction: column;
     flex-wrap: wrap;
-    color:#ffffff;
+    color: #ffffff;
     line-height: 5vh;
     justify-content: flex-end;
 }
 
-#slide-1{
+#slide-1 {
 
     align-items: flex-start;
     text-align: left;
 }
 
-#slide-2{
+#slide-2 {
 
     align-items: center;
     text-align: center;
 }
 
-#slide-3{
+#slide-3 {
 
     align-items: flex-end;
     text-align: right;
 }
 
-#slide-2, #slide-3 {
+#slide-2,
+#slide-3 {
 
     display: none;
 }
 
-.slides h2{
+.slides h2 {
 
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 3vh 0;
 }
 
 .slides p {
 
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 3vh 0;
 }
 
@@ -114,7 +115,7 @@ header a:hover {
     background-color: #4f4ff2;
     font-size: 1rem;
     border: 0;
-    color:#ffffff;
+    color: #ffffff;
     border-radius: 3px;
     padding: 10px;
 }
@@ -122,14 +123,14 @@ header a:hover {
 #circle-images {
 
     background-color: #ffffff;
-    color:#343a40;
+    color: #343a40;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 10vh 5vw;
     padding: 0 0 8vh 0;
-    border-bottom: 1px solid rgba(0,0,0, 0.3);
-    color: rgba(0,0,0, 0.6) 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.6)
 }
 
 .column-text {
@@ -160,8 +161,8 @@ header a:hover {
 
     margin: 2vh 0 0 0;
     padding: 1vh 1vw;
-    background-color: rgba(0,0,0, 0.6);
-    color:#ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
     border: 0;
     border-radius: 3px;
 }
@@ -169,7 +170,7 @@ header a:hover {
 #square-images {
 
     margin: 10vh 5vw;
-    color: rgba(0,0,0, 0.6)
+    color: rgba(0, 0, 0, 0.6)
 }
 
 .block-text {
@@ -180,7 +181,7 @@ header a:hover {
     flex-wrap: wrap;
     margin: 8vh 0;
     padding: 0 0 8vh 0;
-    border-bottom: 1px solid rgba(0,0,0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     justify-content: space-between;
     align-items: center;
     text-align: left;
@@ -190,7 +191,7 @@ header a:hover {
 
     height: 80%;
     width: 30%;
-    
+
 }
 
 .txt {
@@ -201,7 +202,7 @@ header a:hover {
     padding: 0 2vw 0 0;
 }
 
-.txt h2{
+.txt h2 {
 
     font-size: 3rem;
 }
@@ -218,21 +219,79 @@ footer {
 footer a {
 
     text-decoration: none;
-    color:#4f4ff2;
+    color: #4f4ff2;
 }
 
 footer a:hover {
 
-    color:#333392;
+    color: #333392;
     text-decoration: underline;
 }
 
 .light {
 
-    color: rgba(0,0,0, 0.4)
+    color: rgba(0, 0, 0, 0.4)
+}
+
+#slider-images {
+
+    position: relative;
+    height: auto;
+    background-color: rgba(90, 90, 90, 0.6);
 }
 
 
+.arrow-container {
+
+    padding: 0 6vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.arrow {
+
+    font-size: 3rem;
+    color: #f2f2f2;
+    cursor: pointer;
+    pointer-events: all;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.arrow:hover {
+
+    opacity: 1;
+}
+
+.line-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 0 2vh 0;
+}
+
+.line {
+
+    width: 30px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+}
+
+.line.highlight {
+
+    background-color: #ffffff;
+}
 
 
 
