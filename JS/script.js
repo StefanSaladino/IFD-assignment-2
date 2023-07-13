@@ -3,8 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const slides = document.getElementsByClassName("slides");
   const lines = document.getElementsByClassName("line");
 
-  lines[0].classList.add('highlight');
-  
+  lines[0].classList.add("highlight");
+
+  // Add event listener to each line
+  for (let i = 0; i < lines.length; i++) {
+    lines[i].addEventListener("click", function () {
+      showSlide(i);
+    });
+  }
+
   function showSlide(n) {
     //if n is less than 0, it resets the value to the last slide
     //if n is higher than the last index place, it sets the slide back to index 0
