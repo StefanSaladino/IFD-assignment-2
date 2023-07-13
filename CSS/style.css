@@ -18,6 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: rgb(231, 226, 226);
+    z-index: 999;
 }
 
 nav menu h2,
@@ -118,6 +119,11 @@ header a:hover {
     color: #ffffff;
     border-radius: 3px;
     padding: 10px;
+}
+
+.sec1-btn:hover {
+
+    cursor: pointer;
 }
 
 #circle-images {
@@ -252,7 +258,7 @@ footer a:hover {
     align-items: center;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: 998;
     pointer-events: none;
 }
 
@@ -288,11 +294,15 @@ footer a:hover {
     margin: 0 5px;
 }
 
+.line:hover {
+
+    cursor: pointer;
+}
+
 .line.highlight {
 
     background-color: #ffffff;
 }
-
 
 
 
