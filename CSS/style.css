@@ -65,7 +65,7 @@ header a:hover {
     min-width: 100%;
     min-height: 85vh;
     display: flex;
-    background-color: #5a5a5a;
+    background-color: rgba(90, 90, 90, 0.6);
     padding: 15vh 15vw;
     flex-direction: column;
     flex-wrap: wrap;
@@ -77,16 +77,19 @@ header a:hover {
 #slide-1{
 
     align-items: flex-start;
+    text-align: left;
 }
 
 #slide-2{
 
     align-items: center;
+    text-align: center;
 }
 
 #slide-3{
 
     align-items: flex-end;
+    text-align: right;
 }
 
 #slide-2, #slide-3 {
