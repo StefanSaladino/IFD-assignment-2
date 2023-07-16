@@ -21,6 +21,20 @@ header {
     z-index: 999;
 }
 
+.hamburger-icon {
+
+    display: none;
+    padding: 0 4vw;
+}
+
+menu {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 nav menu h2,
 li {
 
@@ -28,20 +42,29 @@ li {
     margin: 2vh 1.5vw;
 }
 
-#search {
+#search-item {
+
+    padding: 1vh 1.5vw;
+    margin: 0 0.5vw 1vh 0;
+    position: absolute;
+    right: 0;
+
+}
+
+#search-input {
 
     padding: 2vh 1.5vw;
     margin: 0 0.5vw;
 }
 
-#search input {
+#search-item input {
 
     border: 0;
     border-radius: 2px;
     height: 6vh;
 }
 
-#search button {
+#search-item button {
 
     background-color: #343a40;
     color: #008000;
@@ -51,7 +74,7 @@ li {
     height: 6vh;
 }
 
-#search button:hover {
+#search-item button:hover {
 
     cursor: pointer;
 }
@@ -124,11 +147,13 @@ header a:hover {
     color: #ffffff;
     border-radius: 3px;
     padding: 10px;
+    height: 10vh;
 }
 
 .sec1-btn:hover {
 
     cursor: pointer;
+    background-color: #0d0d56
 }
 
 #circle-images {
@@ -227,7 +252,7 @@ footer {
 
     display: flex;
     flex-direction: row;
-    margin: 0 5vw 5vh 5vw;
+    padding: 5vh 5vw 10vh 5vw;
     align-items: center;
     justify-content: space-between;
 }
@@ -299,7 +324,7 @@ footer a:hover {
 .line {
 
     width: 30px;
-    height: 6px;
+    height: 3px;
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0 5px;
 }
@@ -312,4 +337,172 @@ footer a:hover {
 .line.highlight {
 
     background-color: #ffffff;
+}
+
+
+@media (max-width: 480px) {
+
+
+    .menu-items {
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60vh;
+        background-color: #343a40;
+        padding: 4vh 1vw;
+        transition: opacity 0.3s ease;
+        z-index: 999;
+        opacity: 0;
+    }
+
+    .hamburger-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1vh 1vw 0 0;
+        border: dotted 1.5px rgba(255, 255, 255, 0.5);
+        padding: 8px 15px;
+        border-radius: 3px;
+        color: rgba(255, 255, 255, 0.5)
+        
+    }
+
+    .hamburger-icon span {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: #ffffff;
+        margin-bottom: 5px;
+        transition: all 0.3s ease;
+    }
+
+    /* Move header elements into hamburger menu */
+    nav menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-items.show {
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+    }
+
+    .menu-items ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    #search-item {
+
+        position:relative;
+        padding: 3vh 0;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    #search-item button {
+
+        width: 18%;
+        margin-top: 2vh;
+        text-align: center;
+    }
+
+    .menu-items li {
+        margin-bottom: 10px;
+    }
+
+    #slider-images {
+
+        padding-top: 8vh;
+    }
+
+    #slider-images h2 {
+
+        line-height: 8vh;
+    }
+
+    #circle-images {
+        display: block;
+    }
+
+    .column-text {
+
+        font-size: .9rem;
+        padding: 4vh 2vw;
+        line-height: 4vh;
+        margin: 4vh 0;
+    }
+
+    .sec2-img {
+
+        height: 25vh;
+        width: 30vw;
+        border: 0;
+        border-radius: 100px;
+        margin-bottom: 3vh;
+    }
+
+
+    .column-text h3 {
+
+        margin: 0 0 3vh 0;
+    }
+
+    .block-text {
+
+        display: block;
+        max-width: 100%;
+        margin: 8vh 0;
+        padding: 0 0 8vh 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .block-text h2 {
+
+        font-size: 1.65rem;
+    }
+
+    .block-text img {
+
+        height: 100%;
+        width: 100%;
+    }
+
+    .txt {
+
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        font-weight: 100;
+
+        margin: 2vh 0;
+        line-height: 6vh;
+        text-align: left;
+    }
+
+    #reverse {
+
+        display: flex;
+    }
+
+    #reverse img {
+
+        order: 2;
+    }
+
+    #reverse .txt {
+
+        order: 1;
+    }
+
+    footer {
+
+        font-size: 0.95em;
+    }
 }
