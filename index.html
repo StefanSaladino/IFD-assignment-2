@@ -20,15 +20,26 @@
         <nav>
           <menu>
             <h2>Carousel</h2>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Link</a></li>
-            <li><a href="index.html">Disabled</a></li>
+            <ul class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Link</a></li>
+              <li><a href="index.html">Disabled</a></li>
+              <li id="search-item">
+                <input
+                  id="search-input"
+                  type="search"
+                  placeholder="Search"
+                />
+                <button>Search</button>
+              </li>
+            </ul>
           </menu>
         </nav>
       </div>
-      <div id="search">
-        <input id="search" type="search" placeholder="Search" />
-        <button>Search</button>
+      <div class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </header>
     <main>
@@ -61,8 +72,8 @@
           <button class="sec1-btn">Browse Gallery</button>
         </div>
         <div class="arrow-container">
-          <div class="arrow arrow-left">&larr;</div>
-          <div class="arrow arrow-right">&rarr;</div>
+          <div class="arrow arrow-left">&lt;</div>
+          <div class="arrow arrow-right">&gt;</div>
         </div>
         <div class="line-container">
           <div class="line"></div>
@@ -123,7 +134,7 @@
           </div>
           <img src="./img/giga-chad.jpg" alt="Absolute Chad" class="sec3-img" />
         </div>
-        <div class="block-text">
+        <div class="block-text" id="reverse">
           <img src="./img/giga-chad.jpg" alt="Absolute Chad" class="sec3-img" />
           <div class="txt">
             <h2>
