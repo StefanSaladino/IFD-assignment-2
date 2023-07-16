@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentSlide = 0;
   const slides = document.getElementsByClassName("slides");
   const lines = document.getElementsByClassName("line");
+  const hamburgerIcon = document.querySelector(".hamburger-icon");
+  const menuItems = document.querySelector(".menu-items");
+  
+
 
   lines[0].classList.add("highlight");
 
@@ -51,10 +55,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Automatically advance slides every 5 seconds
   setInterval(nextSlide, 5000);
 
+  //opens burger menu on click
+  hamburgerIcon.addEventListener("click", function () {
+    this.classList.toggle("open");
+    menuItems.classList.toggle("show");
+    
+  });
+
   const prevArrow = document.querySelector(".arrow-left");
   const nextArrow = document.querySelector(".arrow-right");
 
   prevArrow.addEventListener("click", previousSlide);
   nextArrow.addEventListener("click", nextSlide);
 });
-
