@@ -348,38 +348,41 @@ footer a:hover {
         top: 0;
         left: 0;
         width: 100%;
-        height: 60vh;
+        height: 60%;
         background-color: #343a40;
-        padding: 4vh 1vw;
-        transition: opacity 0.3s ease;
+        padding: 1vh 1vw;
+        transition: opacity 0.5s ease;
         z-index: 999;
         opacity: 0;
     }
 
     .hamburger-icon {
+
         display: block;
         position: absolute;
         top: 0;
         right: 0;
-        margin: 1vh 1vw 0 0;
-        border: dotted 1.5px rgba(255, 255, 255, 0.5);
-        padding: 8px 15px;
+        margin: 1.5vh 1vw 0 0;
+        border: solid 0.5px rgba(255, 255, 255, 0.2);
+        padding: 6px 12px;
         border-radius: 3px;
-        color: rgba(255, 255, 255, 0.5)
-        
+        cursor: pointer;
     }
 
     .hamburger-icon span {
+
         display: block;
         width: 24px;
         height: 3px;
-        background-color: #ffffff;
-        margin-bottom: 5px;
+        background-color: rgba(255, 255, 255, 0.5);;
+        margin: 4px;
         transition: all 0.3s ease;
+        text-align: center;
     }
 
     /* Move header elements into hamburger menu */
     nav menu {
+        
         flex-direction: column;
         align-items: flex-start;
     }
@@ -400,17 +403,25 @@ footer a:hover {
     #search-item {
 
         position:relative;
-        padding: 3vh 0;
+        padding: 1vh 0;
         display: flex;
         flex-direction: column;
         width: 90vw;
     }
 
+    #search-item input {
+
+        height: 2vh;
+        margin-left: 1vw;
+    }
+
     #search-item button {
 
         width: 18%;
-        margin-top: 2vh;
+        margin-top: 1vh;
         text-align: center;
+        height: 10%;
+        margin-left: 1vw;
     }
 
     .menu-items li {
@@ -504,5 +515,20 @@ footer a:hover {
     footer {
 
         font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .sec2-img {
+
+        height: 15vh;
+        width: 37%;
+    }
+
+    .sec1-btn {
+
+        height: auto;
+        padding: 2vh 2vw;
     }
 }
