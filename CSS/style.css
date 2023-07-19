@@ -55,6 +55,8 @@ li {
 
     padding: 2vh 1.5vw;
     margin: 0 0.5vw;
+    max-width: 100%;
+    min-width: 50%;
 }
 
 #search-item input {
@@ -103,6 +105,16 @@ header a:hover {
     justify-content: flex-end;
 }
 
+.slides p{
+
+    padding: 2em 0;
+}
+
+.slides h2 {
+
+    line-height: 1em;
+}
+
 #slide-1 {
 
     align-items: flex-start;
@@ -135,7 +147,7 @@ header a:hover {
 
 .slides p {
 
-    font-size: 1.25rem;
+    font-size: 1.25em;
     padding: 3vh 0;
 }
 
