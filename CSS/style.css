@@ -1,6 +1,5 @@
 /*general reset*/
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,13 +21,11 @@ header {
 }
 
 .hamburger-icon {
-
     display: none;
     padding: 0 4vw;
 }
 
 menu {
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -37,22 +34,18 @@ menu {
 
 nav menu h2,
 li {
-
     display: inline-block;
     margin: 2vh 1.5vw;
 }
 
 #search-item {
-
     padding: 1vh 1.5vw;
     margin: 0 0.5vw 1vh 0;
     position: absolute;
     right: 0;
-
 }
 
 #search-input {
-
     padding: 2vh 1.5vw;
     margin: 0 0.5vw;
     max-width: 100%;
@@ -60,40 +53,34 @@ li {
 }
 
 #search-item input {
-
     border: 0;
     border-radius: 2px;
-    height: 6vh;
+    height: 4vh;
 }
 
 #search-item button {
-
     background-color: #343a40;
     color: #008000;
     border: 1px solid #008000;
     padding: 1vh 0.5vw;
     border-radius: 2px;
-    height: 6vh;
+    height: 4vh;
 }
 
 #search-item button:hover {
-
     cursor: pointer;
 }
 
 header a {
-
     color: inherit;
     text-decoration: none;
 }
 
 header a:hover {
-
     color: #ffffff
 }
 
 .slides {
-
     min-width: 100%;
     min-height: 85vh;
     display: flex;
@@ -106,53 +93,44 @@ header a:hover {
 }
 
 .slides p{
-
     padding: 2em 0;
 }
 
 .slides h2 {
-
     line-height: 1em;
 }
 
 #slide-1 {
-
     align-items: flex-start;
     text-align: left;
 }
 
 #slide-2 {
-
     align-items: center;
     text-align: center;
 }
 
 #slide-3 {
-
     align-items: flex-end;
     text-align: right;
 }
 
 #slide-2,
 #slide-3 {
-
     display: none;
 }
 
 .slides h2 {
-
     font-size: 2.5rem;
     padding: 3vh 0;
 }
 
 .slides p {
-
     font-size: 1.25em;
     padding: 3vh 0;
 }
 
 .sec1-btn {
-
     background-color: #4f4ff2;
     font-size: 1rem;
     border: 0;
@@ -163,13 +141,11 @@ header a:hover {
 }
 
 .sec1-btn:hover {
-
     cursor: pointer;
     background-color: #0d0d56
 }
 
 #circle-images {
-
     background-color: #ffffff;
     color: #343a40;
     display: flex;
@@ -182,7 +158,6 @@ header a:hover {
 }
 
 .column-text {
-
     font-size: 1rem;
     flex-basis: 33%;
     justify-content: center;
@@ -192,13 +167,11 @@ header a:hover {
 }
 
 .column-text h3 {
-
     font-size: 2rem;
     padding: 1vw 0;
 }
 
 .sec2-img {
-
     height: 22.5vh;
     width: 10vw;
     border: 0;
@@ -206,7 +179,6 @@ header a:hover {
 }
 
 .sec2-btn {
-
     margin: 2vh 0 0 0;
     padding: 1vh 1vw;
     background-color: rgba(0, 0, 0, 0.6);
@@ -216,18 +188,15 @@ header a:hover {
 }
 
 .sec2-btn:hover {
-
     cursor: pointer;
 }
 
 #square-images {
-
     margin: 10vh 5vw;
     color: rgba(0, 0, 0, 0.6)
 }
 
 .block-text {
-
     display: flex;
     flex-direction: row;
     max-width: 100%;
@@ -241,14 +210,11 @@ header a:hover {
 }
 
 .block-text img {
-
     height: 80%;
     width: 30%;
-
 }
 
 .txt {
-
     width: 65%;
     height: 20%;
     font-size: 1.5rem;
@@ -256,12 +222,10 @@ header a:hover {
 }
 
 .txt h2 {
-
     font-size: 3rem;
 }
 
 footer {
-
     display: flex;
     flex-direction: row;
     padding: 5vh 5vw 10vh 5vw;
@@ -270,32 +234,26 @@ footer {
 }
 
 footer a {
-
     text-decoration: none;
     color: #4f4ff2;
 }
 
 footer a:hover {
-
     color: #333392;
     text-decoration: underline;
 }
 
 .light {
-
     color: rgba(0, 0, 0, 0.4)
 }
 
 #slider-images {
-
     position: relative;
     height: auto;
     background-color: rgba(90, 90, 90, 0.6);
 }
 
-
 .arrow-container {
-
     padding: 0 6vw;
     position: absolute;
     top: 50%;
@@ -310,7 +268,6 @@ footer a:hover {
 }
 
 .arrow {
-
     font-size: 3rem;
     color: #f2f2f2;
     cursor: pointer;
@@ -320,12 +277,10 @@ footer a:hover {
 }
 
 .arrow:hover {
-
     opacity: 1;
 }
 
 .line-container {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,7 +289,6 @@ footer a:hover {
 }
 
 .line {
-
     width: 30px;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -342,19 +296,18 @@ footer a:hover {
 }
 
 .line:hover {
-
     cursor: pointer;
 }
 
 .line.highlight {
-
     background-color: #ffffff;
 }
 
+.line.highlight {
+    background-color: #ffffff;
+}
 
 @media (max-width: 480px) {
-
-
     .menu-items {
         display: none;
         top: 0;
@@ -369,7 +322,6 @@ footer a:hover {
     }
 
     .hamburger-icon {
-
         display: block;
         position: absolute;
         top: 0;
@@ -382,7 +334,6 @@ footer a:hover {
     }
 
     .hamburger-icon span {
-
         display: block;
         width: 24px;
         height: 3px;
@@ -394,7 +345,6 @@ footer a:hover {
 
     /* Move header elements into hamburger menu */
     nav menu {
-        
         flex-direction: column;
         align-items: flex-start;
     }
@@ -413,7 +363,6 @@ footer a:hover {
     }
 
     #search-item {
-
         position:relative;
         padding: 1vh 0;
         display: flex;
@@ -422,13 +371,11 @@ footer a:hover {
     }
 
     #search-item input {
-
         height: 2vh;
         margin-left: 1vw;
     }
 
     #search-item button {
-
         width: 18%;
         margin-top: 1vh;
         text-align: center;
@@ -441,12 +388,10 @@ footer a:hover {
     }
 
     #slider-images {
-
         padding-top: 8vh;
     }
 
     #slider-images h2 {
-
         line-height: 8vh;
     }
 
@@ -455,7 +400,6 @@ footer a:hover {
     }
 
     .column-text {
-
         font-size: .9rem;
         padding: 4vh 2vw;
         line-height: 4vh;
@@ -463,7 +407,6 @@ footer a:hover {
     }
 
     .sec2-img {
-
         height: 25vh;
         width: 30vw;
         border: 0;
@@ -471,14 +414,11 @@ footer a:hover {
         margin-bottom: 3vh;
     }
 
-
     .column-text h3 {
-
         margin: 0 0 3vh 0;
     }
 
     .block-text {
-
         display: block;
         max-width: 100%;
         margin: 8vh 0;
@@ -487,59 +427,48 @@ footer a:hover {
     }
 
     .block-text h2 {
-
         font-size: 1.65rem;
     }
 
     .block-text img {
-
         height: 100%;
         width: 100%;
     }
 
     .txt {
-
         width: 100%;
         height: 100%;
         font-size: 1rem;
         font-weight: 100;
-
         margin: 2vh 0;
         line-height: 6vh;
         text-align: left;
     }
 
     #reverse {
-
         display: flex;
     }
 
     #reverse img {
-
         order: 2;
     }
 
     #reverse .txt {
-
         order: 1;
     }
 
     footer {
-
         font-size: 0.95em;
     }
 }
 
 @media (max-width: 480px) {
-
     .sec2-img {
-
         height: 15vh;
         width: 37%;
     }
 
     .sec1-btn {
-
         height: auto;
         padding: 2vh 2vw;
     }
