@@ -7,6 +7,7 @@
     font-weight: 100;
 }
 
+/*header is becoming a sticky flex container*/
 header {
     position: sticky;
     top: 0;
@@ -18,8 +19,19 @@ header {
     align-items: center;
     color: rgb(231, 226, 226);
     z-index: 999;
+    height: auto;
+    padding: 0.5em 1em;
 }
 
+/*all items in this div will display in one row*/
+header div:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*hamburger menu will not show until the viewport reaches a certain width*/
 .hamburger-icon {
     display: none;
     padding: 0 4vw;
@@ -32,22 +44,19 @@ menu {
     align-items: center;
 }
 
-nav menu li:first-child{
-    font-size: 1.5rem;
-}
-
-nav menu,
+nav menu h2,
 li {
     display: inline-block;
     margin: 2vh 1.5vw;
 }
 
-
+/*styling search bar and items*/
 #search-item {
     padding: 1vh 1.5vw;
     margin: 0 0.5vw 1vh 0;
     position: absolute;
     right: 0;
+
 }
 
 #search-input {
@@ -60,7 +69,7 @@ li {
 #search-item input {
     border: 0;
     border-radius: 2px;
-    height: 4vh;
+    height: 6vh;
 }
 
 #search-item button {
@@ -69,13 +78,14 @@ li {
     border: 1px solid #008000;
     padding: 1vh 0.5vw;
     border-radius: 2px;
-    height: 4vh;
+    height: 6vh;
 }
 
 #search-item button:hover {
     cursor: pointer;
 }
 
+/*header links*/
 header a {
     color: inherit;
     text-decoration: none;
@@ -85,6 +95,7 @@ header a:hover {
     color: #ffffff
 }
 
+/*first section under the header. One div at a time will show*/
 .slides {
     min-width: 100%;
     min-height: 85vh;
@@ -97,7 +108,7 @@ header a:hover {
     justify-content: flex-end;
 }
 
-.slides p{
+.slides p {
     padding: 2em 0;
 }
 
@@ -105,6 +116,7 @@ header a:hover {
     line-height: 1em;
 }
 
+/*each slide is aligned differently*/
 #slide-1 {
     align-items: flex-start;
     text-align: left;
@@ -120,6 +132,7 @@ header a:hover {
     text-align: right;
 }
 
+/*will not display until slide changes. See JS for more details*/
 #slide-2,
 #slide-3 {
     display: none;
@@ -127,14 +140,15 @@ header a:hover {
 
 .slides h2 {
     font-size: 2.5rem;
-    padding: 3vh 0;
+    padding: 1.5em 0;
 }
 
 .slides p {
     font-size: 1.25em;
-    padding: 3vh 0;
+    padding: 3em 0;
 }
 
+/*section one buttons*/
 .sec1-btn {
     background-color: #4f4ff2;
     font-size: 1rem;
@@ -150,114 +164,15 @@ header a:hover {
     background-color: #0d0d56
 }
 
-#circle-images {
-    background-color: #ffffff;
-    color: #343a40;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10vh 5vw;
-    padding: 0 0 8vh 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    color: rgba(0, 0, 0, 0.6)
-}
-
-.column-text {
-    font-size: 1rem;
-    flex-basis: 33%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 2vw;
-}
-
-.column-text h3 {
-    font-size: 2rem;
-    padding: 1vw 0;
-}
-
-.sec2-img {
-    height: 22.5vh;
-    width: 10vw;
-    border: 0;
-    border-radius: 100px;
-}
-
-.sec2-btn {
-    margin: 2vh 0 0 0;
-    padding: 1vh 1vw;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
-    border: 0;
-    border-radius: 3px;
-}
-
-.sec2-btn:hover {
-    cursor: pointer;
-}
-
-#square-images {
-    margin: 10vh 5vw;
-    color: rgba(0, 0, 0, 0.6)
-}
-
-.block-text {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    flex-wrap: wrap;
-    margin: 8vh 0;
-    padding: 0 0 8vh 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-}
-
-.block-text img {
-    height: 80%;
-    width: 30%;
-}
-
-.txt {
-    width: 65%;
-    height: 20%;
-    font-size: 1.5rem;
-    padding: 0 2vw 0 0;
-}
-
-.txt h2 {
-    font-size: 3rem;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    padding: 5vh 5vw 10vh 5vw;
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer a {
-    text-decoration: none;
-    color: #4f4ff2;
-}
-
-footer a:hover {
-    color: #333392;
-    text-decoration: underline;
-}
-
-.light {
-    color: rgba(0, 0, 0, 0.4)
-}
-
 #slider-images {
     position: relative;
     height: auto;
     background-color: rgba(90, 90, 90, 0.6);
 }
 
+/*The following are accessories in section 1.
+The lines will highlight, corresponding to the active slide (again, see JS for more).
+The arrows are click event listeners to change the slide (full function in JS). */
 .arrow-container {
     padding: 0 6vw;
     position: absolute;
@@ -308,11 +223,130 @@ footer a:hover {
     background-color: #ffffff;
 }
 
-.line.highlight {
+/*section 2*/
+#circle-images {
     background-color: #ffffff;
+    color: #343a40;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10vh 5vw;
+    padding: 0 0 8vh 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.6)
 }
 
-@media (max-width: 480px) {
+.column-text {
+    font-size: 1rem;
+    flex-basis: 33%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2vw;
+}
+
+.column-text h3 {
+    font-size: 2rem;
+    padding: 1vw 0;
+}
+
+.sec2-img {
+    height: 22.5vh;
+    width: 10vw;
+    border: 0;
+    border-radius: 100px;
+}
+
+.sec2-btn {
+    margin: 2vh 0 0 0;
+    padding: 1vh 1vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border: 0;
+    border-radius: 3px;
+}
+
+.sec2-btn:hover {
+    cursor: pointer;
+}
+
+/*final section in main*/
+#square-images {
+    margin: 10vh 5vw;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.block-text {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin: 8vh 0;
+    padding: 0 0 8vh 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.block-text img {
+    height: 80%;
+    width: 30%;
+}
+
+.txt {
+    width: 65%;
+    height: 20%;
+    font-size: 1.5rem;
+    padding: 0 2vw 0 0;
+}
+
+.txt h2 {
+    font-size: 3rem;
+}
+
+/*portion of header in h2 span needs to be slightly lighter*/
+.light {
+    color: rgba(0, 0, 0, 0.4)
+}
+
+/*styling footer*/
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 5vh 5vw 10vh 5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*footer links in blue*/
+footer a {
+    text-decoration: none;
+    color: #4f4ff2;
+}
+
+/*will underline when hovered*/
+footer a:hover {
+    color: #333392;
+    text-decoration: underline;
+}
+
+/*Calling hamburger menu before search bar overlaps with the menu*/
+@media (max-width: 600px) {
+
+    header {
+        padding: 1em;
+    }
+
+    /*all elements in this div will be displayed as a column*/
+    header div:nth-of-type(1) {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+
+    }
+
+    /*all menu items will not display until the burger menu is clicked*/
     .menu-items {
         display: none;
         top: 0;
@@ -326,6 +360,7 @@ footer a:hover {
         opacity: 0;
     }
 
+    /*hamburger menu will display*/
     .hamburger-icon {
         display: block;
         position: absolute;
@@ -342,9 +377,8 @@ footer a:hover {
         display: block;
         width: 24px;
         height: 3px;
-        background-color: rgba(255, 255, 255, 0.5);;
+        background-color: rgba(255, 255, 255, 0.5);
         margin: 4px;
-        transition: all 0.3s ease;
         text-align: center;
     }
 
@@ -354,21 +388,15 @@ footer a:hover {
         align-items: flex-start;
     }
 
+    /*using JS to add a "show" class to menu items when the burger icon is clicked*/
     .menu-items.show {
         display: flex;
         flex-direction: column;
         opacity: 1;
     }
 
-    .menu-items ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 20px;
-    }
-
     #search-item {
-        position:relative;
+        position: relative;
         padding: 1vh 0;
         display: flex;
         flex-direction: column;
@@ -376,7 +404,7 @@ footer a:hover {
     }
 
     #search-item input {
-        height: 2vh;
+        height: 3em;
         margin-left: 1vw;
     }
 
@@ -391,6 +419,10 @@ footer a:hover {
     .menu-items li {
         margin-bottom: 10px;
     }
+}
+
+/*resizing images and modifying layout for a more mobile friendly design*/
+@media (max-width: 480px) {
 
     #slider-images {
         padding-top: 8vh;
@@ -418,6 +450,7 @@ footer a:hover {
         border-radius: 100px;
         margin-bottom: 3vh;
     }
+
 
     .column-text h3 {
         margin: 0 0 3vh 0;
@@ -467,7 +500,8 @@ footer a:hover {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
+
     .sec2-img {
         height: 15vh;
         width: 37%;
