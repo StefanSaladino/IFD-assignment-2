@@ -485,6 +485,7 @@ footer a:hover {
         margin-top: 1vh;
         text-align: center;
         height: 10%;
+        padding: 1vh 0;
     }
 
     .menu-items li {
@@ -515,9 +516,8 @@ footer a:hover {
 
 @media screen and (max-width: 428px) {
 
-    .sec2-img {
-        height: 15vh;
-        width: 37%;
+    .slides h2 {
+        font-size: 2rem;
     }
 
     .sec2-img {
