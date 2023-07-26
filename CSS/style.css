@@ -358,6 +358,47 @@ footer a:hover {
     }   
 }
 
+@media screen and (max-width: 780px) {
+    .block-text {
+        display: block;
+        max-width: 100%;
+        margin: 8vh 0;
+        padding: 0 0 8vh 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .block-text h2 {
+        font-size: 1.65rem;
+    }
+
+    .block-text img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .txt {
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        font-weight: 100;
+        margin: 2vh 0;
+        line-height: 6vh;
+        text-align: left;
+    }
+
+    #reverse {
+        display: flex;
+    }
+
+    #reverse img {
+        order: 2;
+    }
+
+    #reverse .txt {
+        order: 1;
+    }
+}
+
 /*Calling hamburger menu before search bar overlaps with the menu*/
 @media screen and (max-width: 600px) {
 
@@ -464,45 +505,6 @@ footer a:hover {
         height: 10em;
     }
 
-    .block-text {
-        display: block;
-        max-width: 100%;
-        margin: 8vh 0;
-        padding: 0 0 8vh 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    }
-
-    .block-text h2 {
-        font-size: 1.65rem;
-    }
-
-    .block-text img {
-        height: 100%;
-        width: 100%;
-    }
-
-    .txt {
-        width: 100%;
-        height: 100%;
-        font-size: 1rem;
-        font-weight: 100;
-        margin: 2vh 0;
-        line-height: 6vh;
-        text-align: left;
-    }
-
-    #reverse {
-        display: flex;
-    }
-
-    #reverse img {
-        order: 2;
-    }
-
-    #reverse .txt {
-        order: 1;
-    }
-
     footer {
         font-size: 0.95em;
     }
@@ -515,6 +517,11 @@ footer a:hover {
         width: 37%;
     }
 
+    .sec1-btn {
+        height: auto;
+        padding: 2vh 2vw;
+    }
+}
     .sec1-btn {
         height: auto;
         padding: 2vh 2vw;
