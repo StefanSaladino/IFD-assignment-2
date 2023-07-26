@@ -56,7 +56,7 @@ li {
     margin-right: 0.5em;
     position: absolute;
     right: 0;
-    
+
 }
 
 #search-input {
@@ -355,7 +355,7 @@ footer a:hover {
 
     .column-text h3 {
         margin: 0 0 3vh 0;
-    }   
+    }
 }
 
 @media screen and (max-width: 780px) {
@@ -372,7 +372,6 @@ footer a:hover {
     }
 
     .block-text img {
-        height: 100%;
         width: 100%;
     }
 
@@ -456,6 +455,12 @@ footer a:hover {
         align-items: flex-start;
     }
 
+    nav menu h2,
+    li {
+        display: inline-block;
+        margin: 0.5em 0em;
+    }
+
     /*using JS to add a "show" class to menu items when the burger icon is clicked*/
     .menu-items.show {
         display: flex;
@@ -468,12 +473,11 @@ footer a:hover {
         padding: 1vh 0;
         display: flex;
         flex-direction: column;
-        width: 90vw;
+        width: 80vw;
     }
 
     #search-item input {
         height: 3em;
-        margin-left: 1vw;
     }
 
     #search-item button {
@@ -481,7 +485,6 @@ footer a:hover {
         margin-top: 1vh;
         text-align: center;
         height: 10%;
-        margin-left: 1vw;
     }
 
     .menu-items li {
@@ -500,7 +503,7 @@ footer a:hover {
         line-height: 8vh;
     }
 
-    .sec2-img{
+    .sec2-img {
 
         height: 10em;
     }
@@ -517,11 +520,6 @@ footer a:hover {
         width: 37%;
     }
 
-    .sec1-btn {
-        height: auto;
-        padding: 2vh 2vw;
-    }
-}
     .sec1-btn {
         height: auto;
         padding: 2vh 2vw;
