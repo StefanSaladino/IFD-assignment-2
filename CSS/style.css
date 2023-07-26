@@ -20,7 +20,7 @@ header {
     color: rgb(231, 226, 226);
     z-index: 999;
     height: auto;
-    padding: 0.5em 1em;
+    padding: 1em;
 }
 
 /*all items in this div will display in one row*/
@@ -56,29 +56,31 @@ li {
     margin-right: 0.5em;
     position: absolute;
     right: 0;
-
+    
 }
 
 #search-input {
-    padding: 2vh 1.5vw;
+    padding: 2vh .5vw;
     margin: 0 0.5vw;
     max-width: 100%;
-    min-width: 50%;
+    min-width: 60%;
 }
 
 #search-item input {
     border: 0;
     border-radius: 2px;
-    height: 6vh;
+    height: auto;
+    max-height: 90%;
 }
 
 #search-item button {
     background-color: #343a40;
     color: #008000;
     border: 1px solid #008000;
-    padding: 0.5em 0.25em;
+    padding: 2vh 0.5vw;
     border-radius: 2px;
-    height: 6vh;
+    height: inherit;
+    max-height: 90%;
 }
 
 #search-item button:hover {
@@ -253,7 +255,7 @@ The arrows are click event listeners to change the slide (full function in JS). 
     height: 22.5vh;
     width: 10vw;
     border: 0;
-    border-radius: 100px;
+    border-radius: 50%;
 }
 
 .sec2-btn {
@@ -330,8 +332,34 @@ footer a:hover {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 990px) {
+
+    #circle-images {
+        display: block;
+    }
+
+    .column-text {
+        font-size: .9rem;
+        padding: 4vh 2vw;
+        line-height: 4vh;
+        margin: 4vh 0;
+    }
+
+    .sec2-img {
+        height: 15em;
+        width: 30vw;
+        border: 0;
+        border-radius: 50%;
+        margin-bottom: 3vh;
+    }
+
+    .column-text h3 {
+        margin: 0 0 3vh 0;
+    }   
+}
+
 /*Calling hamburger menu before search bar overlaps with the menu*/
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     header {
         padding: 1em;
@@ -431,28 +459,9 @@ footer a:hover {
         line-height: 8vh;
     }
 
-    #circle-images {
-        display: block;
-    }
+    .sec2-img{
 
-    .column-text {
-        font-size: .9rem;
-        padding: 4vh 2vw;
-        line-height: 4vh;
-        margin: 4vh 0;
-    }
-
-    .sec2-img {
-        height: 25vh;
-        width: 30vw;
-        border: 0;
-        border-radius: 100px;
-        margin-bottom: 3vh;
-    }
-
-
-    .column-text h3 {
-        margin: 0 0 3vh 0;
+        height: 10em;
     }
 
     .block-text {
@@ -506,11 +515,6 @@ footer a:hover {
         width: 37%;
     }
 
-    .sec1-btn {
-        height: auto;
-        padding: 2vh 2vw;
-    }
-}
     .sec1-btn {
         height: auto;
         padding: 2vh 2vw;
