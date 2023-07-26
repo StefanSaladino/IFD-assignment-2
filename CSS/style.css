@@ -47,13 +47,13 @@ menu {
 nav menu h2,
 li {
     display: inline-block;
-    margin: 2vh 1.5vw;
+    margin: 0.5em 1.5em;
 }
 
 /*styling search bar and items*/
 #search-item {
-    padding: 1vh 1.5vw;
-    margin: 0 0.5vw 1vh 0;
+    padding: 0.5em 0.75em;
+    margin-right: 0.5em;
     position: absolute;
     right: 0;
 
@@ -76,7 +76,7 @@ li {
     background-color: #343a40;
     color: #008000;
     border: 1px solid #008000;
-    padding: 1vh 0.5vw;
+    padding: 0.5em 0.25em;
     border-radius: 2px;
     height: 6vh;
 }
@@ -92,7 +92,7 @@ header a {
 }
 
 header a:hover {
-    color: #ffffff
+    color: #ffffff;
 }
 
 /*first section under the header. One div at a time will show*/
@@ -104,12 +104,12 @@ header a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     color: #ffffff;
-    line-height: 5vh;
+    line-height: 2em;
     justify-content: flex-end;
 }
 
 .slides p {
-    padding: 2em 0;
+    padding: 0.5em 0;
 }
 
 .slides h2 {
@@ -140,12 +140,11 @@ header a:hover {
 
 .slides h2 {
     font-size: 2.5rem;
-    padding: 1.5em 0;
 }
 
 .slides p {
     font-size: 1.25em;
-    padding: 3em 0;
+    padding: 1em 0;
 }
 
 /*section one buttons*/
@@ -174,7 +173,7 @@ header a:hover {
 The lines will highlight, corresponding to the active slide (again, see JS for more).
 The arrows are click event listeners to change the slide (full function in JS). */
 .arrow-container {
-    padding: 0 6vw;
+    padding: 0 1.5em;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -205,14 +204,14 @@ The arrows are click event listeners to change the slide (full function in JS). 
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    padding: 0 0 2vh 0;
+    padding-bottom: 0.75em;
 }
 
 .line {
     width: 30px;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.5);
-    margin: 0 5px;
+    margin: 0 0.25em;
 }
 
 .line:hover {
@@ -231,7 +230,7 @@ The arrows are click event listeners to change the slide (full function in JS). 
     flex-direction: row;
     flex-wrap: wrap;
     margin: 10vh 5vw;
-    padding: 0 0 8vh 0;
+    padding-bottom: 8vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     color: rgba(0, 0, 0, 0.6)
 }
@@ -242,7 +241,7 @@ The arrows are click event listeners to change the slide (full function in JS). 
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 2vw;
+    padding: 0 1em 3em 1em;
 }
 
 .column-text h3 {
@@ -507,6 +506,11 @@ footer a:hover {
         width: 37%;
     }
 
+    .sec1-btn {
+        height: auto;
+        padding: 2vh 2vw;
+    }
+}
     .sec1-btn {
         height: auto;
         padding: 2vh 2vw;
