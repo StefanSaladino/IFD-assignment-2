@@ -422,7 +422,7 @@ footer a:hover {
 }
 
 /*resizing images and modifying layout for a more mobile friendly design*/
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     #slider-images {
         padding-top: 8vh;
@@ -500,7 +500,7 @@ footer a:hover {
     }
 }
 
-@media (max-width: 380px) {
+@media screen and (max-width: 428px) {
 
     .sec2-img {
         height: 15vh;
